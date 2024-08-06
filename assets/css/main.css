@@ -288,6 +288,22 @@ input, select, textarea {
 
 		}
 
+/* Container Styles */
+
+.center-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Optional: To ensure the container takes full width */
+.row.gtr-150 {
+    display: flex;
+    justify-content: center;
+}
+
 /* Row */
 
 	.row {
@@ -2040,7 +2056,7 @@ input, select, textarea {
 		header.major:after {
 			background: rgba(144, 144, 144, 0.5);
 			content: '';
-			display: inline-block;
+			display: none;
 			height: 1px;
 			margin-top: 1.5em;
 			width: 6em;
