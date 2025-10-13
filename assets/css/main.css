@@ -2410,18 +2410,6 @@ input, select, textarea {
 				width: 100%;
 			}
 
-			/* Center image on mobile */
-.image-wrapper {
-  display: flex;
-  justify-content: flex-start; /* keep left alignment on desktop */
-}
-
-@media screen and (max-width: 768px) {
-  .image-wrapper {
-    justify-content: center; /* center image on smaller screens */
-  }
-}
-
 /* List */
 
 	ol {
@@ -3539,3 +3527,14 @@ input, select, textarea {
 			}
 
 	}
+
+	.image-wrapper {
+  display: flex;
+  justify-content: flex-start; /* align left by default */
+}
+
+@media screen and (max-width: 768px) {
+  .image-wrapper {
+    justify-content: center !important; /* center on mobile */
+  }
+}
