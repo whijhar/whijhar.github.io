@@ -2410,6 +2410,18 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			/* Center image on mobile */
+.image-wrapper {
+  display: flex;
+  justify-content: flex-start; /* keep left alignment on desktop */
+}
+
+@media screen and (max-width: 768px) {
+  .image-wrapper {
+    justify-content: center; /* center image on smaller screens */
+  }
+}
+
 /* List */
 
 	ol {
@@ -3494,6 +3506,7 @@ input, select, textarea {
 						#footer .copyright li:first-child {
 							margin-top: 0;
 						}
+
 
 	}
 
