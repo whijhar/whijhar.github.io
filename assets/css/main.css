@@ -3527,14 +3527,3 @@ input, select, textarea {
 			}
 
 	}
-
-	.image-wrapper {
-  display: flex;
-  justify-content: flex-start; /* align left by default */
-}
-
-@media screen and (max-width: 768px) {
-  .image-wrapper {
-    justify-content: center !important; /* center on mobile */
-  }
-}
